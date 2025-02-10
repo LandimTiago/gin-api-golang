@@ -1,11 +1,14 @@
 package main
 
 import (
+	"github.com/LandimTiago/gin-api-golang/database"
 	"github.com/LandimTiago/gin-api-golang/models"
 	"github.com/LandimTiago/gin-api-golang/routes"
 )
 
 func main() {
+	database.DatabaseConnection()
+
 	models.Alunos = []models.Aluno{
 		{
 			Nome: "Tiago",
