@@ -10,5 +10,7 @@ func HandleRequest() {
 
 	r.GET("/alunos", controllers.RetornaAlunos)
 
+	r.GET("/alunos/:nome", controllers.RetornaSaudacao)
+
 	r.Run()
 }
